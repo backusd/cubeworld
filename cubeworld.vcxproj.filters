@@ -21,222 +21,225 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\main.cpp">
+    <ClCompile Include="applicationclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\applicationclass.cpp">
+    <ClCompile Include="bitmapclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\bitmapclass.cpp">
+    <ClCompile Include="blackforestclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\blackforestclass.cpp">
+    <ClCompile Include="cameraclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\cameraclass.cpp">
+    <ClCompile Include="cpuclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\cpuclass.cpp">
+    <ClCompile Include="d3dclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\d3dclass.cpp">
+    <ClCompile Include="entitylistclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\entitylistclass.cpp">
+    <ClCompile Include="fontclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontclass.cpp">
+    <ClCompile Include="fontshaderclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontshaderclass.cpp">
+    <ClCompile Include="fpsclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fpsclass.cpp">
+    <ClCompile Include="frustumclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\frustumclass.cpp">
+    <ClCompile Include="inputclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\inputclass.cpp">
+    <ClCompile Include="lightclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\lightclass.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\modelclass.cpp">
+    <ClCompile Include="modelclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkclass.cpp">
+    <ClCompile Include="networkclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\positionclass.cpp">
+    <ClCompile Include="positionclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeclass.cpp">
+    <ClCompile Include="quadtreeclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeshaderclass.cpp">
+    <ClCompile Include="skydomeclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\stateclass.cpp">
+    <ClCompile Include="skydomeshaderclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\systemclass.cpp">
+    <ClCompile Include="stateclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainclass.cpp">
+    <ClCompile Include="systemclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainshaderclass.cpp">
+    <ClCompile Include="terrainclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textclass.cpp">
+    <ClCompile Include="terrainshaderclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureclass.cpp">
+    <ClCompile Include="textclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureshaderclass.cpp">
+    <ClCompile Include="textureclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\timerclass.cpp">
+    <ClCompile Include="textureshaderclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\userinterfaceclass.cpp">
+    <ClCompile Include="timerclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="userinterfaceclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\applicationclass.h">
+    <ClInclude Include="applicationclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\bitmapclass.h">
+    <ClInclude Include="bitmapclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\blackforestclass.h">
+    <ClInclude Include="blackforestclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\cameraclass.h">
+    <ClInclude Include="cameraclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\cpuclass.h">
+    <ClInclude Include="cpuclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\d3dclass.h">
+    <ClInclude Include="d3dclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\entitylistclass.h">
+    <ClInclude Include="entitylistclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontclass.h">
+    <ClInclude Include="fontclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontshaderclass.h">
+    <ClInclude Include="fontshaderclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fpsclass.h">
+    <ClInclude Include="fpsclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\frustumclass.h">
+    <ClInclude Include="frustumclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\inputclass.h">
+    <ClInclude Include="inputclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\lightclass.h">
+    <ClInclude Include="lightclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\modelclass.h">
+    <ClInclude Include="modelclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkclass.h">
+    <ClInclude Include="networkclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkmessages.h">
+    <ClInclude Include="networkmessages.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\positionclass.h">
+    <ClInclude Include="positionclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\quadtreeclass.h">
+    <ClInclude Include="quadtreeclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeclass.h">
+    <ClInclude Include="skydomeclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeshaderclass.h">
+    <ClInclude Include="skydomeshaderclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\stateclass.h">
+    <ClInclude Include="stateclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\systemclass.h">
+    <ClInclude Include="systemclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainclass.h">
+    <ClInclude Include="terrainclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainshaderclass.h">
+    <ClInclude Include="terrainshaderclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textclass.h">
+    <ClInclude Include="textclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureclass.h">
+    <ClInclude Include="textureclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureshaderclass.h">
+    <ClInclude Include="textureshaderclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\timerclass.h">
+    <ClInclude Include="timerclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\userinterfaceclass.h">
+    <ClInclude Include="userinterfaceclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\font.fx">
+    <FxCompile Include="font.fx">
       <Filter>Other Source Files</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydome.fx">
+    <FxCompile Include="skydome.fx">
       <Filter>Other Source Files</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrain.fx">
+    <FxCompile Include="terrain.fx">
       <Filter>Other Source Files</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\texture.fx">
+    <FxCompile Include="texture.fx">
       <Filter>Other Source Files</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\blackforest_cm.bmp">
+    <Image Include="blackforest_cm.bmp">
       <Filter>Other Data Files</Filter>
     </Image>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\blackforest_hm.bmp">
+    <Image Include="blackforest_hm.bmp">
       <Filter>Other Data Files</Filter>
     </Image>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\char1.dds">
+    <Image Include="char1.dds">
       <Filter>Other Data Files</Filter>
     </Image>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\char2.dds">
+    <Image Include="char2.dds">
       <Filter>Other Data Files</Filter>
     </Image>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\chat.dds">
+    <Image Include="chat.dds">
       <Filter>Other Data Files</Filter>
     </Image>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\font\font.dds">
+    <Image Include="font.dds">
       <Filter>Other Data Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\cube.txt">
+    <Text Include="skydome.txt">
       <Filter>Other Data Files</Filter>
     </Text>
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\skydome.txt">
+    <Text Include="cube.txt">
       <Filter>Other Data Files</Filter>
     </Text>
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\font\fontdata.txt">
+    <Text Include="fontdata.txt">
       <Filter>Other Data Files</Filter>
     </Text>
   </ItemGroup>

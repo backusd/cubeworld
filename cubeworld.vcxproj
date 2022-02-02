@@ -18,6 +18,87 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="applicationclass.cpp" />
+    <ClCompile Include="bitmapclass.cpp" />
+    <ClCompile Include="blackforestclass.cpp" />
+    <ClCompile Include="cameraclass.cpp" />
+    <ClCompile Include="cpuclass.cpp" />
+    <ClCompile Include="d3dclass.cpp" />
+    <ClCompile Include="entitylistclass.cpp" />
+    <ClCompile Include="fontclass.cpp" />
+    <ClCompile Include="fontshaderclass.cpp" />
+    <ClCompile Include="fpsclass.cpp" />
+    <ClCompile Include="frustumclass.cpp" />
+    <ClCompile Include="inputclass.cpp" />
+    <ClCompile Include="lightclass.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="modelclass.cpp" />
+    <ClCompile Include="networkclass.cpp" />
+    <ClCompile Include="positionclass.cpp" />
+    <ClCompile Include="quadtreeclass.cpp" />
+    <ClCompile Include="skydomeclass.cpp" />
+    <ClCompile Include="skydomeshaderclass.cpp" />
+    <ClCompile Include="stateclass.cpp" />
+    <ClCompile Include="systemclass.cpp" />
+    <ClCompile Include="terrainclass.cpp" />
+    <ClCompile Include="terrainshaderclass.cpp" />
+    <ClCompile Include="textclass.cpp" />
+    <ClCompile Include="textureclass.cpp" />
+    <ClCompile Include="textureshaderclass.cpp" />
+    <ClCompile Include="timerclass.cpp" />
+    <ClCompile Include="userinterfaceclass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="applicationclass.h" />
+    <ClInclude Include="bitmapclass.h" />
+    <ClInclude Include="blackforestclass.h" />
+    <ClInclude Include="cameraclass.h" />
+    <ClInclude Include="cpuclass.h" />
+    <ClInclude Include="d3dclass.h" />
+    <ClInclude Include="entitylistclass.h" />
+    <ClInclude Include="fontclass.h" />
+    <ClInclude Include="fontshaderclass.h" />
+    <ClInclude Include="fpsclass.h" />
+    <ClInclude Include="frustumclass.h" />
+    <ClInclude Include="inputclass.h" />
+    <ClInclude Include="lightclass.h" />
+    <ClInclude Include="modelclass.h" />
+    <ClInclude Include="networkclass.h" />
+    <ClInclude Include="networkmessages.h" />
+    <ClInclude Include="positionclass.h" />
+    <ClInclude Include="quadtreeclass.h" />
+    <ClInclude Include="skydomeclass.h" />
+    <ClInclude Include="skydomeshaderclass.h" />
+    <ClInclude Include="stateclass.h" />
+    <ClInclude Include="systemclass.h" />
+    <ClInclude Include="terrainclass.h" />
+    <ClInclude Include="terrainshaderclass.h" />
+    <ClInclude Include="textclass.h" />
+    <ClInclude Include="textureclass.h" />
+    <ClInclude Include="textureshaderclass.h" />
+    <ClInclude Include="timerclass.h" />
+    <ClInclude Include="userinterfaceclass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="font.fx" />
+    <FxCompile Include="skydome.fx" />
+    <FxCompile Include="terrain.fx" />
+    <FxCompile Include="texture.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="blackforest_cm.bmp" />
+    <Image Include="blackforest_hm.bmp" />
+    <Image Include="char1.dds" />
+    <Image Include="char2.dds" />
+    <Image Include="chat.dds" />
+    <Image Include="font.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cube.txt" />
+    <Text Include="fontdata.txt" />
+    <Text Include="skydome.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -174,122 +255,6 @@
       <ShaderModel>2.0</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\applicationclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\bitmapclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\blackforestclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\cameraclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\cpuclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\d3dclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\entitylistclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontshaderclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\fpsclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\frustumclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\inputclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\lightclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\main.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\modelclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\positionclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeshaderclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\stateclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\systemclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainshaderclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureshaderclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\timerclass.cpp" />
-    <ClCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\userinterfaceclass.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\applicationclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\bitmapclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\blackforestclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\cameraclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\cpuclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\d3dclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\entitylistclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fontshaderclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\fpsclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\frustumclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\inputclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\lightclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\modelclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\networkmessages.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\positionclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\quadtreeclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydomeshaderclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\stateclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\systemclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrainshaderclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\textureshaderclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\timerclass.h" />
-    <ClInclude Include="..\..\..\Documents\Code\rastertek\cw_client\source\userinterfaceclass.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\font.fx">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">FontPixelShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">FontPixelShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FontPixelShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FontPixelShader</EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\skydome.fx">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SkyDomeVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SkyDomeVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SkyDomeVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SkyDomeVertexShader</EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\terrain.fx">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TerrainVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TerrainVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TerrainVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TerrainVertexShader</EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\..\Documents\Code\rastertek\cw_client\source\texture.fx">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TextureVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TextureVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TextureVertexShader</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TextureVertexShader</EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
-    </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\blackforest_cm.bmp" />
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\blackforest_hm.bmp" />
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\char1.dds" />
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\char2.dds" />
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\chat.dds" />
-    <Image Include="..\..\..\Documents\Code\rastertek\cw_client\data\font\font.dds" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\cube.txt" />
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\font\fontdata.txt" />
-    <Text Include="..\..\..\Documents\Code\rastertek\cw_client\data\skydome.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
