@@ -8,8 +8,11 @@ void WindowManager::DestroyWindows()
 {
 	for (auto iii = m_windows.begin(); iii != m_windows.end(); ++iii)
 	{
-		if (iii->get()->Destroy())
+		if (iii->get()->NeedsDestroy())
 		{
+			// Call the Destroy() method and then erase it from the vector
+			iii->get()->Destroy();
+
 			m_windows.erase(iii);
 
 			break;

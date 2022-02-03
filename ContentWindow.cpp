@@ -224,6 +224,81 @@ void ContentWindow::Present()
 
 }
 
+void ContentWindow::Destroy()
+{
+	// Release the black forest object.
+	if (m_BlackForest)
+	{
+		m_BlackForest->Shutdown();
+		delete m_BlackForest;
+		m_BlackForest = 0;
+	}
+
+	// Release the StateClass object.
+	if (m_State)
+	{
+		delete m_State;
+		m_State = 0;
+	}
+
+	// Release the user interface object.
+	if (m_UserInterface)
+	{
+		m_UserInterface->Shutdown();
+		delete m_UserInterface;
+		m_UserInterface = 0;
+	}
+
+	// Release the cpu object.
+	if (m_Cpu)
+	{
+		m_Cpu->Shutdown();
+		delete m_Cpu;
+		m_Cpu = 0;
+	}
+
+	// Release the fps object.
+	if (m_Fps)
+	{
+		delete m_Fps;
+		m_Fps = 0;
+	}
+
+	// Release the timer object.
+	if (m_Timer)
+	{
+		delete m_Timer;
+		m_Timer = 0;
+	}
+
+	// Release the network object.
+	if (m_Network)
+	{
+		m_Network->Shutdown();
+		delete m_Network;
+		m_Network = 0;
+	}
+
+	// Release the D3D object.
+	if (m_D3D)
+	{
+		m_D3D->Shutdown();
+		delete m_D3D;
+		m_D3D = 0;
+	}
+
+	// Release the input object.
+	if (m_Input)
+	{
+		m_Input->Shutdown();
+		delete m_Input;
+		m_Input = 0;
+	}
+}
+
+
+
+
 
 
 LRESULT ContentWindow::OnCreate(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept

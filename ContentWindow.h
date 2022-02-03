@@ -38,6 +38,7 @@ public:
 	bool Render() override;
 	void Present() override;
 
+	void Destroy() override;
 
 protected:
 	LRESULT OnCreate(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept override;

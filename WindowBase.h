@@ -13,12 +13,14 @@ public:
 
 	LRESULT HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept override;
 
-	bool Destroy() { return m_destroy; }
+	bool NeedsDestroy() { return m_destroy; }
+	virtual void Destroy() {}
 
 	virtual void Update() {}
 	virtual bool Render() { return true; }
 	virtual void Present() {}
 
+	
 
 protected:
 

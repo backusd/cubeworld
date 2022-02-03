@@ -31,6 +31,9 @@ int App::Run()
 		// process all messages pending, but to not block for new messages
 		if (const auto ecode = WindowManager::ProcessMessages())
 		{
+			// Destroy all windows
+			WindowManager::DestroyWindows();
+
 			// if return optional has value, means we're quitting so return exit code
 			return *ecode;
 		}
