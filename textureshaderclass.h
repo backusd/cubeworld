@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _TEXTURESHADERCLASS_H_
 #define _TEXTURESHADERCLASS_H_
-
+#include "pch.h"
 
 //////////////
 // INCLUDES //
@@ -29,9 +29,9 @@ public:
 	void Render(ID3D10Device*, int, D3DXMATRIX, D3DXMATRIX, D3DXMATRIX, ID3D10ShaderResourceView*);
 
 private:
-	bool InitializeShader(ID3D10Device*, HWND, WCHAR*);
+	bool InitializeShader(ID3D10Device*, HWND, CHAR*);
 	void ShutdownShader();
-	void OutputShaderErrorMessage(ID3D10Blob*, HWND, WCHAR*);
+	void OutputShaderErrorMessage(ID3D10Blob*, HWND, CHAR*);
 
 	void SetShaderParameters(D3DXMATRIX, D3DXMATRIX, D3DXMATRIX, ID3D10ShaderResourceView*);
 	void RenderShader(ID3D10Device*, int);

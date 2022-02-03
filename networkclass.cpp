@@ -152,7 +152,8 @@ bool NetworkClass::InitializeWinSock()
 	WSADATA wsaData;
 	int error;
 	unsigned long bufferSize;
-	WSAPROTOCOL_INFOW* protocolBuffer;  
+	//WSAPROTOCOL_INFOW* protocolBuffer;
+	WSAPROTOCOL_INFOA* protocolBuffer;
 	int protocols[2];
 
 
@@ -176,11 +177,12 @@ bool NetworkClass::InitializeWinSock()
 	WSAEnumProtocols(NULL, NULL, &bufferSize);
 
 	// Create a buffer for the protocol information structs.
-	protocolBuffer = new WSAPROTOCOL_INFOW[bufferSize];
+	//protocolBuffer = new WSAPROTOCOL_INFOW[bufferSize];
+	protocolBuffer = new WSAPROTOCOL_INFOA[bufferSize];
 	if(!protocolBuffer)
 	{
 		return false;
-	}
+	}	
 
 	// Create the list of protocols we are looking for which are TCP and UDP.
 	protocols[0] = IPPROTO_TCP;

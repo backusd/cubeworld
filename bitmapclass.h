@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _BITMAPCLASS_H_
 #define _BITMAPCLASS_H_
-
+#include "pch.h"
 
 ///////////////////////
 // MY CLASS INCLUDES //
@@ -28,7 +28,7 @@ public:
 	BitmapClass(const BitmapClass&);
 	~BitmapClass();
 
-	bool Initialize(ID3D10Device*, int, int, WCHAR*, int, int, int, int);
+	bool Initialize(ID3D10Device*, int, int, CHAR*, int, int, int, int);
 	void Shutdown();
 	bool Render(ID3D10Device*, int, int);
 
@@ -43,7 +43,7 @@ private:
 	bool UpdateBuffers(int, int);
 	void RenderBuffers(ID3D10Device*);
 
-	bool LoadTexture(ID3D10Device*, WCHAR*);
+	bool LoadTexture(ID3D10Device*, CHAR*);
 	void ReleaseTexture();
 
 private:

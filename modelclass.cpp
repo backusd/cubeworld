@@ -23,7 +23,7 @@ ModelClass::~ModelClass()
 }
 
 
-bool ModelClass::Initialize(ID3D10Device* device, char* modelFilename, WCHAR* textureFilename)
+bool ModelClass::Initialize(ID3D10Device* device, char* modelFilename, CHAR* textureFilename)
 {
 	bool result;
 
@@ -211,7 +211,7 @@ void ModelClass::RenderBuffers(ID3D10Device* device)
 }
 
 
-bool ModelClass::LoadTexture(ID3D10Device* device, WCHAR* filename)
+bool ModelClass::LoadTexture(ID3D10Device* device, CHAR* filename)
 {
 	bool result;
 

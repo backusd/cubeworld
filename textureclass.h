@@ -3,13 +3,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _TEXTURECLASS_H_
 #define _TEXTURECLASS_H_
-
+#include "pch.h"
 
 //////////////
 // INCLUDES //
 //////////////
-#include <d3d10.h>
-#include <d3dx10.h>
+//#include <d3d10.h>
+//#include <d3dx10.h>
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +22,7 @@ public:
 	TextureClass(const TextureClass&);
 	~TextureClass();
 
-	bool Initialize(ID3D10Device*, WCHAR*);
+	bool Initialize(ID3D10Device*, CHAR*);
 	void Shutdown();
 
 	ID3D10ShaderResourceView* GetTexture();

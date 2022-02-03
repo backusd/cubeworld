@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="applicationclass.cpp" />
+    <ClCompile Include="App.cpp" />
     <ClCompile Include="bitmapclass.cpp" />
     <ClCompile Include="blackforestclass.cpp" />
     <ClCompile Include="cameraclass.cpp" />
+    <ClCompile Include="ChameleonException.cpp" />
+    <ClCompile Include="ContentWindow.cpp" />
     <ClCompile Include="cpuclass.cpp" />
     <ClCompile Include="d3dclass.cpp" />
     <ClCompile Include="entitylistclass.cpp" />
@@ -32,15 +34,14 @@
     <ClCompile Include="frustumclass.cpp" />
     <ClCompile Include="inputclass.cpp" />
     <ClCompile Include="lightclass.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="modelclass.cpp" />
     <ClCompile Include="networkclass.cpp" />
+    <ClCompile Include="pch.cpp" />
     <ClCompile Include="positionclass.cpp" />
     <ClCompile Include="quadtreeclass.cpp" />
     <ClCompile Include="skydomeclass.cpp" />
     <ClCompile Include="skydomeshaderclass.cpp" />
     <ClCompile Include="stateclass.cpp" />
-    <ClCompile Include="systemclass.cpp" />
     <ClCompile Include="terrainclass.cpp" />
     <ClCompile Include="terrainshaderclass.cpp" />
     <ClCompile Include="textclass.cpp" />
@@ -48,12 +49,19 @@
     <ClCompile Include="textureshaderclass.cpp" />
     <ClCompile Include="timerclass.cpp" />
     <ClCompile Include="userinterfaceclass.cpp" />
+    <ClCompile Include="WindowBase.cpp" />
+    <ClCompile Include="WindowException.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="WindowsMessageMap.cpp" />
+    <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="applicationclass.h" />
+    <ClInclude Include="App.h" />
     <ClInclude Include="bitmapclass.h" />
     <ClInclude Include="blackforestclass.h" />
     <ClInclude Include="cameraclass.h" />
+    <ClInclude Include="ChameleonException.h" />
+    <ClInclude Include="ContentWindow.h" />
     <ClInclude Include="cpuclass.h" />
     <ClInclude Include="d3dclass.h" />
     <ClInclude Include="entitylistclass.h" />
@@ -66,12 +74,12 @@
     <ClInclude Include="modelclass.h" />
     <ClInclude Include="networkclass.h" />
     <ClInclude Include="networkmessages.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="positionclass.h" />
     <ClInclude Include="quadtreeclass.h" />
     <ClInclude Include="skydomeclass.h" />
     <ClInclude Include="skydomeshaderclass.h" />
     <ClInclude Include="stateclass.h" />
-    <ClInclude Include="systemclass.h" />
     <ClInclude Include="terrainclass.h" />
     <ClInclude Include="terrainshaderclass.h" />
     <ClInclude Include="textclass.h" />
@@ -79,6 +87,11 @@
     <ClInclude Include="textureshaderclass.h" />
     <ClInclude Include="timerclass.h" />
     <ClInclude Include="userinterfaceclass.h" />
+    <ClInclude Include="WindowBase.h" />
+    <ClInclude Include="WindowBaseTemplate.h" />
+    <ClInclude Include="WindowException.h" />
+    <ClInclude Include="WindowManager.h" />
+    <ClInclude Include="WindowsMessageMap.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="font.fx">
@@ -160,14 +173,14 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">

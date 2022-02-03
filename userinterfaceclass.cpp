@@ -39,11 +39,11 @@ bool UserInterfaceClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWid
 
 	// Initialize the chat window bitmap object.
 	//WCHAR file[] = L"../Engine/data/chat.dds";
-	WCHAR file[] = L"chat.dds";
+	CHAR file[] = "chat.dds";
 	result = m_ChatWindow->Initialize(Direct3D->GetDevice(), screenWidth, screenHeight, file, 600, 200, m_chatWindowX, m_chatWindowY);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the chat window object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the chat window object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -58,14 +58,14 @@ bool UserInterfaceClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWid
 	result = m_Text->Initialize(Direct3D->GetDevice(), hwnd, screenWidth, screenHeight);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the text object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the text object.", "Error", MB_OK);
 		return false;
 	}
 
 	result = SetupTextStrings(Direct3D);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the text strings.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the text strings.", "Error", MB_OK);
 		return false;
 	}
 

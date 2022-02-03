@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _TERRAINSHADERCLASS_H_
 #define _TERRAINSHADERCLASS_H_
-
+#include "pch.h"
 
 //////////////
 // INCLUDES //
@@ -31,9 +31,9 @@ public:
 	void RenderShader(ID3D10Device*, int);
 
 private:
-	bool InitializeShader(ID3D10Device*, HWND, WCHAR*);
+	bool InitializeShader(ID3D10Device*, HWND, CHAR*);
 	void ShutdownShader();
-	void OutputShaderErrorMessage(ID3D10Blob*, HWND, WCHAR*);
+	void OutputShaderErrorMessage(ID3D10Blob*, HWND, CHAR*);
 
 private:
 	ID3D10Effect* m_effect;

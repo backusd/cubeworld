@@ -21,7 +21,7 @@ FontClass::~FontClass()
 }
 
 
-bool FontClass::Initialize(ID3D10Device* device, char* fontFilename, WCHAR* textureFilename)
+bool FontClass::Initialize(ID3D10Device* device, char* fontFilename, CHAR* textureFilename)
 {
 	bool result;
 
@@ -116,7 +116,7 @@ void FontClass::ReleaseFontData()
 }
 
 
-bool FontClass::LoadTexture(ID3D10Device* device, WCHAR* filename)
+bool FontClass::LoadTexture(ID3D10Device* device, CHAR* filename)
 {
 	bool result;
 

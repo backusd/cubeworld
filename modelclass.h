@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _MODELCLASS_H_
 #define _MODELCLASS_H_
-
+#include "pch.h"
 
 //////////////
 // INCLUDES //
@@ -43,7 +43,7 @@ public:
 	ModelClass(const ModelClass&);
 	~ModelClass();
 
-	bool Initialize(ID3D10Device*, char*, WCHAR*);
+	bool Initialize(ID3D10Device*, char*, CHAR*);
 	void Shutdown();
 	void Render(ID3D10Device*);
 
@@ -55,7 +55,7 @@ private:
 	void ShutdownBuffers();
 	void RenderBuffers(ID3D10Device*);
 
-	bool LoadTexture(ID3D10Device*, WCHAR*);
+	bool LoadTexture(ID3D10Device*, CHAR*);
 	void ReleaseTexture();
 
 	bool LoadModel(char*);

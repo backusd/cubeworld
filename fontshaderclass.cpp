@@ -35,7 +35,7 @@ bool FontShaderClass::Initialize(ID3D10Device* device, HWND hwnd)
 
 	// Initialize the shader that will be used to draw the triangle.
 	//WCHAR shader[] = L"../Engine/font.fx";
-	WCHAR shader[] = L"font.fx";
+	CHAR shader[] = "font.fx";
 	result = InitializeShader(device, hwnd, shader);
 	if(!result)
 	{
@@ -68,7 +68,7 @@ void FontShaderClass::Render(ID3D10Device* device, int indexCount, D3DXMATRIX wo
 }
 
 
-bool FontShaderClass::InitializeShader(ID3D10Device* device, HWND hwnd, WCHAR* filename)
+bool FontShaderClass::InitializeShader(ID3D10Device* device, HWND hwnd, CHAR* filename)
 {
 	HRESULT result;
 	ID3D10Blob* errorMessage;
@@ -93,7 +93,7 @@ bool FontShaderClass::InitializeShader(ID3D10Device* device, HWND hwnd, WCHAR* f
 		// If there was  nothing in the error message then it simply could not find the shader file itself.
 		else
 		{
-			MessageBox(hwnd, filename, L"Missing Shader File", MB_OK);
+			MessageBox(hwnd, filename, "Missing Shader File", MB_OK);
 		}
 
 		return false;
@@ -187,7 +187,7 @@ void FontShaderClass::ShutdownShader()
 }
 
 
-void FontShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND hwnd, WCHAR* shaderFilename)
+void FontShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND hwnd, CHAR* shaderFilename)
 {
 	char* compileErrors;
 	unsigned long bufferSize, i;
@@ -217,7 +217,7 @@ void FontShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND hw
 	errorMessage = 0;
 
 	// Pop a message up on the screen to notify the user to check the text file for compile errors.
-	MessageBox(hwnd, L"Error compiling shader.  Check shader-error.txt for message.", shaderFilename, MB_OK);
+	MessageBox(hwnd, "Error compiling shader.  Check shader-error.txt for message.", shaderFilename, MB_OK);
 
 	return;
 }

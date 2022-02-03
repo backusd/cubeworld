@@ -94,7 +94,7 @@ D3DXVECTOR4 SkyDomeClass::GetCenterColor()
 
 bool SkyDomeClass::LoadSkyDomeModel(char* filename)
 {
-	ifstream fin;
+	std::ifstream fin;
 	char input;
 	int i;
 

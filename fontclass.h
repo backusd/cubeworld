@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #ifndef _FONTCLASS_H_
 #define _FONTCLASS_H_
-
+#include "pch.h"
 
 //////////////
 // INCLUDES //
@@ -41,7 +41,7 @@ public:
 	FontClass(const FontClass&);
 	~FontClass();
 
-	bool Initialize(ID3D10Device*, char*, WCHAR*);
+	bool Initialize(ID3D10Device*, char*, CHAR*);
 	void Shutdown();
 
 	ID3D10ShaderResourceView* GetTexture();
@@ -51,7 +51,7 @@ public:
 private:
 	bool LoadFontData(char*);
 	void ReleaseFontData();
-	bool LoadTexture(ID3D10Device*, WCHAR*);
+	bool LoadTexture(ID3D10Device*, CHAR*);
 	void ReleaseTexture();
 
 private:

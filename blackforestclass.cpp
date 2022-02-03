@@ -83,7 +83,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_SkyDome->Initialize(Direct3D->GetDevice());
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the sky dome object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the sky dome object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -98,7 +98,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_SkyDomeShader->Initialize(Direct3D->GetDevice(), hwnd);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the sky dome shader object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the sky dome shader object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -117,7 +117,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_Terrain->Initialize(file1, file2, 12.5f);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the terrain object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the terrain object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -132,7 +132,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_TerrainShader->Initialize(Direct3D->GetDevice(), hwnd);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the slope shader object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the slope shader object.", "Error", MB_OK);
 		return false;
 	}
 	
@@ -147,7 +147,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_TextureShader->Initialize(Direct3D->GetDevice(), hwnd);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the texture shader object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the texture shader object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -162,11 +162,11 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	//char file3[] = "../Engine/data/cube.txt";
 	//WCHAR file4[] = L"../Engine/data/char1.dds";
 	char file3[] = "cube.txt";
-	WCHAR file4[] = L"char1.dds";
+	CHAR file4[] = "char1.dds";
 	result = m_CubeModel1->Initialize(Direct3D->GetDevice(), file3, file4);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the model object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -181,11 +181,11 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	//char file5[] = "../Engine/data/cube.txt";
 	//WCHAR file6[] = L"../Engine/data/char2.dds";
 	char file5[] = "cube.txt";
-	WCHAR file6[] = L"char2.dds";
+	CHAR file6[] = "char2.dds";
 	result = m_CubeModel2->Initialize(Direct3D->GetDevice(), file5, file6);
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the secpmd model object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the secpmd model object.", "Error", MB_OK);
 		return false;
 	}
 
@@ -193,7 +193,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	m_EntityList = new EntityListClass[MAX_ENTITIES];
 	if(!m_EntityList)
 	{
-		MessageBox(hwnd, L"Could not initialize the entity list array.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the entity list array.", "Error", MB_OK);
 		return false;
 	}
 
@@ -215,7 +215,7 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	result = m_QuadTree->Initialize(m_Terrain, Direct3D->GetDevice());
 	if(!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the quad tree object.", L"Error", MB_OK);
+		MessageBox(hwnd, "Could not initialize the quad tree object.", "Error", MB_OK);
 		return false;
 	}
 
