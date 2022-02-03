@@ -62,7 +62,7 @@ bool NetworkClass::Initialize(char* ipAddress, unsigned short serverPort)
 	result = RequestEntityList();
 	if(!result)
 	{
-
+		return false;
 	}
 
 	return true;
