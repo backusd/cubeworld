@@ -35,7 +35,9 @@ bool SkyDomeShaderClass::Initialize(ID3D10Device* device, HWND hwnd)
 
 
 	// Initialize the shader that will be used to draw the triangles.
-	result = InitializeShader(device, hwnd, L"../Engine/skydome.fx");
+	//WCHAR shader[] = L"../Engine/skydome.fx";
+	WCHAR shader[] = L"skydome.fx";
+	result = InitializeShader(device, hwnd, shader);
 	if(!result)
 	{
 		return false;

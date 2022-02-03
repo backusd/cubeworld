@@ -40,7 +40,11 @@ bool TextClass::Initialize(ID3D10Device* device, HWND hwnd, int screenWidth, int
 	}
 
 	// Initialize the font object.
-	result = m_Font->Initialize(device, "../Engine/data/font/fontdata.txt", L"../Engine/data/font/font.dds");
+	//char file1[] = "../Engine/data/font/fontdata.txt";
+	//WCHAR file2[] = L"../Engine/data/font/font.dds";
+	char file1[] = "fontdata.txt";
+	WCHAR file2[] = L"font.dds";
+	result = m_Font->Initialize(device, file1, file2);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the font object.", L"Error", MB_OK);

@@ -149,7 +149,8 @@ bool ApplicationClass::Initialize(HINSTANCE hinstance, HWND hwnd, int screenWidt
 	m_Network->SetUIPointer(m_UserInterface);
 
 	// Initialize the network object.
-	result = m_Network->Initialize("192.168.0.106", 7000);
+	char ip[] = "155.248.215.180";
+	result = m_Network->Initialize(ip, 7000);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the network.", L"Error", MB_OK);

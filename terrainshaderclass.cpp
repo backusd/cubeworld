@@ -35,7 +35,9 @@ bool TerrainShaderClass::Initialize(ID3D10Device* device, HWND hwnd)
 
 
 	// Initialize the shader that will be used to render the terrain.
-	result = InitializeShader(device, hwnd, L"../Engine/terrain.fx");
+	//WCHAR file[] = L"../Engine/terrain.fx";
+	WCHAR file[] = L"terrain.fx";
+	result = InitializeShader(device, hwnd, file);
 	if(!result)
 	{
 		return false;

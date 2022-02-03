@@ -110,7 +110,11 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	}
 
 	// Initialize the terrain object.
-	result = m_Terrain->Initialize("../Engine/data/blackforest_hm.bmp", "../Engine/data/blackforest_cm.bmp", 12.5f);
+	//char file1[] = "../Engine/data/blackforest_hm.bmp";
+	//char file2[] = "../Engine/data/blackforest_cm.bmp";
+	char file1[] = "blackforest_hm.bmp";
+	char file2[] = "blackforest_cm.bmp";
+	result = m_Terrain->Initialize(file1, file2, 12.5f);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the terrain object.", L"Error", MB_OK);
@@ -155,7 +159,11 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	}
 
 	// Initialize the model object.
-	result = m_CubeModel1->Initialize(Direct3D->GetDevice(), "../Engine/data/cube.txt", L"../Engine/data/char1.dds");
+	//char file3[] = "../Engine/data/cube.txt";
+	//WCHAR file4[] = L"../Engine/data/char1.dds";
+	char file3[] = "cube.txt";
+	WCHAR file4[] = L"char1.dds";
+	result = m_CubeModel1->Initialize(Direct3D->GetDevice(), file3, file4);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
@@ -170,7 +178,11 @@ bool BlackForestClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWidth
 	}
 
 	// Initialize the model object.
-	result = m_CubeModel2->Initialize(Direct3D->GetDevice(), "../Engine/data/cube.txt", L"../Engine/data/char2.dds");
+	//char file5[] = "../Engine/data/cube.txt";
+	//WCHAR file6[] = L"../Engine/data/char2.dds";
+	char file5[] = "cube.txt";
+	WCHAR file6[] = L"char2.dds";
+	result = m_CubeModel2->Initialize(Direct3D->GetDevice(), file5, file6);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the secpmd model object.", L"Error", MB_OK);

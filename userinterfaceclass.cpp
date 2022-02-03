@@ -38,7 +38,9 @@ bool UserInterfaceClass::Initialize(D3DClass* Direct3D, HWND hwnd, int screenWid
 	}
 
 	// Initialize the chat window bitmap object.
-	result = m_ChatWindow->Initialize(Direct3D->GetDevice(), screenWidth, screenHeight, L"../Engine/data/chat.dds", 600, 200, m_chatWindowX, m_chatWindowY);
+	//WCHAR file[] = L"../Engine/data/chat.dds";
+	WCHAR file[] = L"chat.dds";
+	result = m_ChatWindow->Initialize(Direct3D->GetDevice(), screenWidth, screenHeight, file, 600, 200, m_chatWindowX, m_chatWindowY);
 	if(!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the chat window object.", L"Error", MB_OK);
@@ -267,7 +269,8 @@ bool UserInterfaceClass::SetFps(ID3D10Device* device)
 
 	
 	// Update the sentence vertex buffer with the new string information.
-	result = m_Text->CreateSentence(device, 2, 16, "Fps: 0", 10, 50, 1.0f, 1.0f, 1.0f);
+	char fps[] = "Fps: 0";
+	result = m_Text->CreateSentence(device, 2, 16, fps, 10, 50, 1.0f, 1.0f, 1.0f);
 	if(!result)
 	{
 		return false;
@@ -339,7 +342,8 @@ bool UserInterfaceClass::SetCpu(ID3D10Device* device)
 
 	
 	// Update the sentence vertex buffer with the new string information.
-	result = m_Text->CreateSentence(device, 3, 16, "Cpu: 0%", 10, 70, 1.0f, 1.0f, 1.0f);
+	char cpu_percent[] = "Cpu: 0%";
+	result = m_Text->CreateSentence(device, 3, 16, cpu_percent, 10, 70, 1.0f, 1.0f, 1.0f);
 	if(!result)
 	{
 		return false;
@@ -381,7 +385,8 @@ bool UserInterfaceClass::SetLatency(ID3D10Device* device)
 
 	
 	// Update the sentence vertex buffer with the new string information.
-	result = m_Text->CreateSentence(device, 4, 16, "Latency: 0 ms", 10, 90, 1.0f, 1.0f, 1.0f);
+	char latency[] = "Latency: 0 ms";
+	result = m_Text->CreateSentence(device, 4, 16, latency, 10, 90, 1.0f, 1.0f, 1.0f);
 	if(!result)
 	{
 		return false;
@@ -429,7 +434,8 @@ bool UserInterfaceClass::SetDrawCount(ID3D10Device* device)
 
 	
 	// Update the sentence vertex buffer with the new string information.
-	result = m_Text->CreateSentence(device, 5, 32, "Render count: 0", 10, 110, 0.0f, 1.0f, 0.0f);
+	char count[] = "Render count: 0";
+	result = m_Text->CreateSentence(device, 5, 32, count, 10, 110, 0.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
@@ -468,58 +474,59 @@ bool UserInterfaceClass::SetChatTextStrings(ID3D10Device* device)
 {
 	bool result;
 
+	char space[] = " ";
 
 	// Chat string 1.
-	result = m_Text->CreateSentence(device, 6, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 20), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 6, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 20), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 2.
-	result = m_Text->CreateSentence(device, 7, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 40), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 7, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 40), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 3.
-	result = m_Text->CreateSentence(device, 8, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 60), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 8, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 60), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 4.
-	result = m_Text->CreateSentence(device, 9, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 80), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 9, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 80), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 5.
-	result = m_Text->CreateSentence(device, 10, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 100), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 10, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 100), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 6.
-	result = m_Text->CreateSentence(device, 11, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 120), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 11, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 120), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Chat string 7.
-	result = m_Text->CreateSentence(device, 12, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 140), 1.0f, 1.0f, 0.0f);
+	result = m_Text->CreateSentence(device, 12, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 140), 1.0f, 1.0f, 0.0f);
 	if(!result)
 	{
 		return false;
 	}
 
 	// Talk bar string.
-	result = m_Text->CreateSentence(device, 13, 50, " ", (m_chatWindowX + 20), (m_chatWindowY + 180), 1.0f, 1.0f, 1.0f);
+	result = m_Text->CreateSentence(device, 13, 50, space, (m_chatWindowX + 20), (m_chatWindowY + 180), 1.0f, 1.0f, 1.0f);
 	if(!result)
 	{
 		return false;

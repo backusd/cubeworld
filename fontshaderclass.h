@@ -11,7 +11,7 @@
 #include <d3d10.h>
 #include <d3dx10.h>
 #include <fstream>
-using namespace std;
+//using namespace std;
 
 
 ////////////////////////////////////////////////////////////////////////////////

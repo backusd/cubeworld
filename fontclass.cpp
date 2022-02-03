@@ -58,7 +58,7 @@ void FontClass::Shutdown()
 
 bool FontClass::LoadFontData(char* filename)
 {
-	ifstream fin;
+	std::ifstream fin;
 	int i;
 	char temp;
 

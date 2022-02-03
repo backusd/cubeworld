@@ -121,11 +121,13 @@ bool D3DClass::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hw
 	m_videoCardMemory = (int)(adapterDesc.DedicatedVideoMemory / 1024 / 1024);
 
 	// Convert the name of the video card to a character array and store it.
-	error = wcstombs_s(&stringLength, m_videoCardDescription, 128, adapterDesc.Description, 128);
+	size_t _stringLength;
+	error = wcstombs_s(&_stringLength, m_videoCardDescription, 128, adapterDesc.Description, 128);
 	if(error != 0)
 	{
 		return false;
 	}
+	stringLength = static_cast<unsigned int>(_stringLength);
 
 	// Release the display mode list.
 	delete [] displayModeList;
@@ -159,8 +161,11 @@ bool D3DClass::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hw
 	// Set the refresh rate of the back buffer.
 	if(m_vsync_enabled)
 	{
-	    swapChainDesc.BufferDesc.RefreshRate.Numerator = numerator;
-		swapChainDesc.BufferDesc.RefreshRate.Denominator = denominator;
+		// Code above does not correctly set the numerator/denominator, so just set manually
+		swapChainDesc.BufferDesc.RefreshRate.Numerator = 60;
+		swapChainDesc.BufferDesc.RefreshRate.Denominator = 1;
+	    //swapChainDesc.BufferDesc.RefreshRate.Numerator = numerator;
+		//swapChainDesc.BufferDesc.RefreshRate.Denominator = denominator;
 	}
 	else
 	{

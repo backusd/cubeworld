@@ -17,11 +17,13 @@ const int MAX_QUEUE_SIZE = 200;
 /////////////
 #pragma comment(lib, "ws2_32.lib")
 
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 
 //////////////
 // INCLUDES //
 //////////////
 #include <winsock2.h>
+
 
 
 ///////////////////////

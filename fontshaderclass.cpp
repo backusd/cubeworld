@@ -34,7 +34,9 @@ bool FontShaderClass::Initialize(ID3D10Device* device, HWND hwnd)
 
 
 	// Initialize the shader that will be used to draw the triangle.
-	result = InitializeShader(device, hwnd, L"../Engine/font.fx");
+	//WCHAR shader[] = L"../Engine/font.fx";
+	WCHAR shader[] = L"font.fx";
+	result = InitializeShader(device, hwnd, shader);
 	if(!result)
 	{
 		return false;
@@ -189,7 +191,7 @@ void FontShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND hw
 {
 	char* compileErrors;
 	unsigned long bufferSize, i;
-	ofstream fout;
+	std::ofstream fout;
 
 
 	// Get a pointer to the error message text buffer.
